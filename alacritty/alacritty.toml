@@ -1,6 +1,6 @@
 [font]
 normal = { family = "CaskaydiaCove NF" }
-size = 13
+size = 12
 
 [window]
 dynamic_title = true
