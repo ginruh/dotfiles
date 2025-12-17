@@ -8,7 +8,7 @@
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-# ZSH_THEME="af-magic"
+ZSH_THEME="af-magic"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -124,7 +124,7 @@ esac
 # pnpm end
 
 # posh for prompt
-eval "$(oh-my-posh init zsh --config ~/.config/posh/themes/space.omp.json)"
+# eval "$(oh-my-posh init zsh --config ~/.config/posh/themes/multiverse-neon.omp.json)"
 
 # aliases for kubectl for different environments
 alias kme='kubectl --kubeconfig ~/.kube/k3s.yaml'

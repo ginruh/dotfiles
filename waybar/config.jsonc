@@ -1,10 +1,13 @@
 {
   "layer": "top",
   "position": "top",
-  "height": 20,
-  "modules-left": ["niri/workspaces", "cffi/niri-taskbar"],
-  "modules-center": ["clock"],
-  "modules-right": ["tray", "network", "pulseaudio", "battery", "memory", "cpu", "custom/notification", "custom/power"],
+  "height": 30,
+  // "modules-center": ["hyprland/workspaces"],
+  "modules-left": ["tray", "niri/workspaces"],
+  // "modules-left": ["tray", "hyprland/windowcount", "hyprland/window"],
+  // "modules-center": ["cffi/niri-taskbar"],
+  "modules-center": [],
+  "modules-right": ["clock", "network", "pulseaudio", "battery", "memory", "cpu", "custom/notification"],
   "niri/workspaces": {
     "persistent-workspaces": {
       //    "1": ["HDMI-A-1"],
@@ -31,6 +34,35 @@
       "eDP-1": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
     }
   },
+  "niri/window": {
+  	"format": "{title}",
+    "icon": true,
+    "icon-size": 20
+  },
+  "wlr/taskbar": {
+    "format": "{icon}",
+    "icon-size": 20,
+    "tooltip-format": "{title}",
+    "on-click": "activate",
+    "all-outputs": false
+  },
+  "hyprland/window": {
+    "icon": true
+  },
+  "hyprland/windowcount": {
+    "format": "[{}]",
+    "format-fullscreen": "💻",
+    "separate-outputs": true
+  },
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
+      "active": "🟢",
+      "default": "⚫",
+      "persistent": "⚫"
+    },
+    "all-outputs": true,
+  },
   "sway/workspaces": {
     "on-click": "activate",
     "sort-by-number": true,
@@ -55,7 +87,7 @@
     "on-click": "swaync-client -t -sw"
   },
   "cffi/niri-taskbar": {
-    "module_path": "/opt/waybar/modules/libniri_taskbar.so"
+    "module_path": "/home/vomaksh/.vomaksh/niri-taskbar/target/release/libniri_taskbar.so"
   },
   "tray": {
     "icon-size": 16,
@@ -100,7 +132,7 @@
     "format-icons": ["", "", "", "", ""]
   },
   "cpu": {
-    "format": " {}%",
+    "format": " {}",
     "max-length": 10
   },
   "memory": {

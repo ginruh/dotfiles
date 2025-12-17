@@ -1,32 +1,42 @@
-// Zed settings
-//
-// For information on how to configure Zed, see the Zed
-// documentation: https://zed.dev/docs/configuring-zed
-//
-// To see all of Zed's default settings without changing your
-// custom settings, run `zed: open default settings` from the
-// command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "icon_theme": "Material Icon Theme",
+  "title_bar": {
+    "show_project_items": true,
+    "show_onboarding_banner": false,
+    "show_user_picture": true,
+    "show_sign_in": false,
+    "show_branch_name": true,
+    "show_branch_icon": false,
+  },
+  "buffer_font_weight": 400.0,
+  "project_panel": {
+    "dock": "right",
+  },
+  "base_keymap": "VSCode",
+  "icon_theme": "VSCode Icons for Zed (Dark Official Icons)",
   "telemetry": {
     "diagnostics": false,
-    "metrics": false
+    "metrics": false,
   },
   "vim_mode": true,
-  "ui_font_size": 15,
-  "ui_font_family": "JetBrainsMono Nerd Font",
-  "buffer_font_size": 15,
-  "buffer_font_family": "JetBrainsMono Nerd Font",
-  // "buffer_font_family": "CaskaydiaCove Nerd Font",
+  "ui_font_size": 14.0,
+  "ui_font_family": "Google Sans Code",
+  "buffer_font_size": 15.0,
+  "buffer_font_family": "Google Sans Code",
   "buffer_line_height": "standard",
   "terminal": {
-    "font_family": "JetBrainsMono Nerd Font",
-    "font_size": 14,
-    "line_height": "standard"
+    "toolbar": {
+      "breadcrumbs": false,
+    },
+    "font_size": 14.0,
+    "line_height": "standard",
+  },
+  "toolbar": {
+    "breadcrumbs": false,
+    "quick_actions": false,
   },
   "theme": {
     "mode": "dark",
-    "light": "Fleet Light",
-    "dark": "Fleet Dark"
-  }
+    "light": "Ayu Light",
+    "dark": "Carbonfox - opaque",
+  },
 }

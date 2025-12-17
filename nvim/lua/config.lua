@@ -1,5 +1,18 @@
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 
+function configure_theme()
+  require('nightfox').setup({
+    options = {
+      transparent = true,
+      styles = {
+        comments = "italic",
+        keywords = "bold",
+        types = "italic,bold",
+      }
+    }
+  })
+end
+
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({
     "git",
@@ -57,7 +70,22 @@ require("lazy").setup({
     },
   },
   { "rebelot/kanagawa.nvim", priority = 1000 },
-  { "EdenEast/nightfox.nvim", priority = 1000 },
+  { "EdenEast/nightfox.nvim", priority = 1001 },
+  {
+    "f-person/auto-dark-mode.nvim",
+    opts = {
+      set_dark_mode = function()
+        configure_theme()
+        vim.cmd("colorscheme nordfox")
+      end,
+      set_light_mode = function()
+        configure_theme()
+        vim.cmd("colorscheme dayfox")
+      end,
+      update_interval = 3000,
+      fallback = "dark"
+    }
+  },
   -- Telescope
   "nvim-lua/plenary.nvim",
   "nvim-telescope/telescope.nvim",
@@ -175,17 +203,6 @@ require("nvim-tree").setup({
 vim.keymap.set("n", "<leader>ee", "<cmd>NvimTreeToggle<cr>", {})
 vim.keymap.set("n", "<leader>ef", "<cmd>NvimTreeFocus<cr>", {})
 
-require('nightfox').setup({
-  options = {
-    transparent = true,
-    styles = {
-      comments = "italic",
-      keywords = "bold",
-      types = "italic,bold",
-    }
-  }
-})
-vim.cmd("colorscheme nordfox")
 
 -- colorizer setup
 require("colorizer").setup()

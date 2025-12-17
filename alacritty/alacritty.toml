@@ -1,6 +1,7 @@
 [font]
 normal = { family = "CaskaydiaCove NF" }
-size = 12
+# normal = { family = "Atkinson Hyperlegible Mono Medium" }
+size = 14
 
 [window]
 dynamic_title = true

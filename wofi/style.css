@@ -1,0 +1,29 @@
+window {
+  margin: 4px;
+  background-color: #27272a;
+  font-family: 'Google Sans Code';
+}
+
+#input {
+  border-bottom: 1px solid #27272a;
+  border-radius: 0px;
+  background-color: #404040;
+  color: #eceff4;
+  padding: 4px 8px;
+  font-size: 15px;
+}
+
+#input:focus {
+  box-shadow: none;
+}
+
+#entry {
+  padding: 6px 4px;
+  font-size: 16px;
+}
+
+#entry:selected {
+  background-color: #525252;
+  color: #eceff4;
+  outline: none;
+}

@@ -1,14 +1,22 @@
-font-family = CaskaydiaCove NF
-# font-family = JetBrainsMono NF
+font-family = Google Sans Code
 font-size = 12
-# font-size = 13
-# theme = GitHub-Dark-Default
-# theme = Dark Modern
-theme = carbonfox
-window-theme = ghostty
+theme = dark:Carbonfox,light:Dayfox
 copy-on-select = true
 bold-is-bright = true
+gtk-wide-tabs = true
+background-blur = true
+background-opacity = 1
+shell-integration = fish
+gtk-titlebar-style = tabs
 gtk-wide-tabs = false
+window-decoration = server
 
-# keybindings
 keybind = ctrl+shift+d=toggle_window_decorations
+keybind = ctrl+alt+z=toggle_split_zoom
+keybind = ctrl+alt+j=goto_split:down
+keybind = ctrl+alt+k=goto_split:up
+keybind = ctrl+alt+l=goto_split:right
+keybind = ctrl+alt+h=goto_split:left
+keybind = ctrl+shift+"=new_split:down
+keybind = ctrl+shift+%=new_split:right
+keybind = ctrl+alt+x=close_surface

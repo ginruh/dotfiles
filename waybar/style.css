@@ -1,13 +1,15 @@
 * {
-  font-family: "JetBrainsMono NF", "CaskaydiaCove NF", "Adwaita Sans", FontAwesome, Monocraft;
-  font-size: 14px;
+    font-family:
+        "Google Sans Code", "JetBrainsMono Nerd Font", "CaskaydiaCove NF",
+        "Adwaita Sans", FontAwesome, Monocraft;
+    font-size: 14px;
 }
 
 #waybar {
-  background: linear-gradient(rgba(40, 40, 40, 1), rgba(40, 40, 40, 1));
-  /* background: transparent; */
-  /* color: #f0f0f0; */
-  /* background: #6b7280; */
+    background: linear-gradient(rgba(40, 40, 40, 1), rgba(40, 40, 40, 1));
+    /* background: transparent; */
+    /* color: #f0f0f0; */
+    /* background: #6b7280; */
 }
 
 /* #workspaces { */
@@ -18,16 +20,16 @@
 /* } */
 
 #workspaces button {
-  padding: 0px;
-  color: #6b7280;
+    padding: 0px;
+    color: #6b7280;
 }
 
 #workspaces button.active {
-  color: #fafafa;
+    color: #fafafa;
 }
 
 #workspaces button.visible {
-  color: #fafafa;
+    color: #fafafa;
 }
 
 #workspaces,
@@ -50,11 +52,18 @@
 #scratchpad,
 #power-profiles-daemon,
 #custom-power {
-  color: #f0f0f0;
-  margin-right: 4px;
-  background: linear-gradient(rgba(40, 40, 40, 1), rgba(40, 40, 40, 1))
-      padding-box,
-    linear-gradient(90deg, #8ec07c, #d5c4a1) border-box;
-  padding: 0px 10px;
-  /* border-bottom: 2px solid red; */
+    color: #f0f0f0;
+    margin-right: 4px;
+    background:
+        linear-gradient(rgba(40, 40, 40, 1), rgba(40, 40, 40, 1)) padding-box,
+        linear-gradient(90deg, #8ec07c, #d5c4a1) border-box;
+    padding: 0px 10px;
+    /* border-bottom: 2px solid red; */
+}
+
+/* Adding margin and padding */
+#windowcount {
+    margin-left: 0px;
+    padding: 0px 5px;
+    color: #f0f0f0;
 }
